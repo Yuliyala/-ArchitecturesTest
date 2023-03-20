@@ -14,6 +14,9 @@
 		B2B9159229C838860037C2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B9159129C838860037C2AC /* Assets.xcassets */; };
 		B2B9159529C838870037C2AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B9159329C838870037C2AC /* LaunchScreen.storyboard */; };
 		B2B9159D29C839BE0037C2AC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9159C29C839BE0037C2AC /* Person.swift */; };
+		B2B915A429C87A150037C2AC /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B915A329C87A150037C2AC /* GreetingPresenter.swift */; };
+		B2B915A629C87A260037C2AC /* GreetingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B915A529C87A260037C2AC /* GreetingInteractor.swift */; };
+		B2B915A829C87A4B0037C2AC /* GreetingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B915A729C87A4B0037C2AC /* GreetingConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B2B9159429C838870037C2AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2B9159629C838870037C2AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B9159C29C839BE0037C2AC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B2B915A329C87A150037C2AC /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		B2B915A529C87A260037C2AC /* GreetingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingInteractor.swift; sourceTree = "<group>"; };
+		B2B915A729C87A4B0037C2AC /* GreetingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,9 @@
 		B2B9158729C838840037C2AC /* MVCTest */ = {
 			isa = PBXGroup;
 			children = (
+				B2B915A229C879DE0037C2AC /* Greeting */,
 				B2B9158829C838840037C2AC /* AppDelegate.swift */,
 				B2B9158A29C838840037C2AC /* SceneDelegate.swift */,
-				B2B9158C29C838840037C2AC /* GreetingViewController.swift */,
 				B2B9159C29C839BE0037C2AC /* Person.swift */,
 				B2B9158E29C838840037C2AC /* Main.storyboard */,
 				B2B9159129C838860037C2AC /* Assets.xcassets */,
@@ -68,6 +74,17 @@
 				B2B9159629C838870037C2AC /* Info.plist */,
 			);
 			path = MVCTest;
+			sourceTree = "<group>";
+		};
+		B2B915A229C879DE0037C2AC /* Greeting */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9158C29C838840037C2AC /* GreetingViewController.swift */,
+				B2B915A329C87A150037C2AC /* GreetingPresenter.swift */,
+				B2B915A529C87A260037C2AC /* GreetingInteractor.swift */,
+				B2B915A729C87A4B0037C2AC /* GreetingConfigurator.swift */,
+			);
+			path = Greeting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2B9158D29C838840037C2AC /* GreetingViewController.swift in Sources */,
+				B2B915A629C87A260037C2AC /* GreetingInteractor.swift in Sources */,
+				B2B915A829C87A4B0037C2AC /* GreetingConfigurator.swift in Sources */,
+				B2B915A429C87A150037C2AC /* GreetingPresenter.swift in Sources */,
 				B2B9158929C838840037C2AC /* AppDelegate.swift in Sources */,
 				B2B9159D29C839BE0037C2AC /* Person.swift in Sources */,
 				B2B9158B29C838840037C2AC /* SceneDelegate.swift in Sources */,
