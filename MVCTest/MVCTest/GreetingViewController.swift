@@ -7,19 +7,30 @@
 
 import UIKit
 
-class  GreetingViewController: UIViewController {
+protocol GreetingViewProtocol: AnyObject {
+    func setGreeting(_ greeting: String)
+}
 
+class  GreetingViewController: UIViewController {
+    
     @IBOutlet weak var greetingLabel: UILabel!
-    private var person:Person!
+    
+    private var presenter: GreetingPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        person = Person(name: "Yuliya", surname: "Lapenak")
+        let person = Person(name: "Tim", surname: "Cook")
+        presenter = GreetingPresenter(view: self, person: person)
     }
-
+    
     @IBAction func showGreetingPressed() {
-        greetingLabel.text = "Hello, \(person.name) \( person.surname)!"
+        presenter.showGreeting()
+    }
+}
+
+extension GreetingViewController: GreetingViewProtocol {
+    func setGreeting(_ greeting: String) {
+        greetingLabel.text = greeting
     }
     
 }
-
